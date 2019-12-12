@@ -1,0 +1,15 @@
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\GPACalculator.csprojAssemblyReference.cache
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\App.g.cs
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\GPACalculator_MarkupCompile.cache
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\GPACalculator_MarkupCompile.lref
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\bin\Debug\GPACalculator.exe.config
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\bin\Debug\GPACalculator.exe
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\bin\Debug\GPACalculator.pdb
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\MainWindow.baml
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\GPACalculator.g.resources
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\GPACalculator.Properties.Resources.resources
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\GPACalculator.csproj.GenerateResource.cache
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\GPACalculator.csproj.CoreCompileInputs.cache
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\GPACalculator.exe
+C:\Users\Max Hendricks\Downloads\C#\GPACalculator\GPACalculator\obj\Debug\GPACalculator.pdb
