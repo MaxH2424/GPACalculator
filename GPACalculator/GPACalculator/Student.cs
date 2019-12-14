@@ -13,8 +13,9 @@ namespace GPACalculator
         private string studentName;
         private int classes;
         private double gpa;
+        private string studentDate;
 
-        Student()
+        public Student()
         {
             gradePoints = 0;
             creditHours = 0;
@@ -23,13 +24,23 @@ namespace GPACalculator
             gpa = 0;
         }
 
-        Student(int points, int ch, string sn, int cl, double g)
+        public Student(int points, int ch, string sn, int cl, double g)
         {
             gradePoints = points;
             creditHours = ch;
             studentName = sn;
             classes = cl;
             gpa = g;
+        }
+
+        public void SetDate(string d)
+        {
+            studentDate = d;
+        }
+
+        public string GetDate()
+        {
+            return studentDate;
         }
 
         public void SetName(string n)
@@ -84,7 +95,8 @@ namespace GPACalculator
 
         public double SolveGpa(double points, double ch)
         {
-            return (points / ch);
+            double gpa = (points / ch);
+            return gpa;
         }
 
     }

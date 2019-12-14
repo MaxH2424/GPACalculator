@@ -18,11 +18,9 @@ namespace GPACalculator
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
     public partial class MainWindow : Window
     {
-        private string name;
-        private string date;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -31,9 +29,9 @@ namespace GPACalculator
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            name = this.NameBox.Text;
-            date = this.NameBox.Text;
-            
+            Window1 newWindow = new Window1();
+            newWindow.Show();
+            this.Close();
         }
     }
 }

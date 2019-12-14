@@ -1,0 +1,62 @@
+﻿<Window x:Class="GPACalculator.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GPACalculator"
+        mc:Ignorable="d"
+        Background="DarkGray"
+        Title="GPA Calculator" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="616,305,0,0" TextWrapping="Wrap" Text="GPA:" FontSize="18" VerticalAlignment="Top" Width="37" RenderTransformOrigin="0.809,0.828"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="658,305,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Name ="CalcBox"/>
+        <Button Content="Calculate" HorizontalAlignment="Left" Height="37" Margin="562,352,0,0" VerticalAlignment="Top" Width="200" Click="Calculate_Points"/>
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="203,33,0,0" VerticalAlignment="Top" Width="55" RenderTransformOrigin="0.493,0.463" Name="DropDown">
+            <ComboBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.476"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ComboBox.RenderTransform>
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+            <ComboBoxItem>6</ComboBoxItem>
+            <ComboBoxItem>7</ComboBoxItem>
+            <ComboBoxItem>8</ComboBoxItem>
+            <ComboBoxItem>9</ComboBoxItem>
+        </ComboBox>
+
+
+
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="134,31,0,0" TextWrapping="Wrap" Text="Classes:"  FontSize="18" VerticalAlignment="Top" Width="67"/>
+        <StackPanel HorizontalAlignment="Left" Height="275" Margin="10,114,0,0" VerticalAlignment="Top" Width="125" Name="StackPack1">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Margin" Value="0,10,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left" Height="276" Margin="257,114,0,0" VerticalAlignment="Top" Width="149" Name="StackPack2">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type ComboBox}">
+                    <Setter Property="Margin" Value="0,6,0,0" x:Name="Combo"/>
+                </Style>
+            </StackPanel.Resources>
+
+        </StackPanel>
+        <Button Content="Add Classes" HorizontalAlignment="Left" Height="26" Margin="292,31,0,0" VerticalAlignment="Top" Width="92" Click="Generate_Classes"/>
+        <Button Content="Reset Classes" HorizontalAlignment="Left" Height="24" Margin="10,31,0,0" VerticalAlignment="Top" Width="83" Click="Reset_Classes"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="585,31,0,0" TextWrapping="Wrap" Text="Enter Your Name" VerticalAlignment="Top" Width="95" Name="NameBox"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="504,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="562,101,0,0" TextWrapping="Wrap" Text="Enter the Date - And Semester" VerticalAlignment="Top" Width="190" Name="DateBox"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="504,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="280"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="10,80,0,0" TextWrapping="Wrap" Text="Credit Hours:" FontSize="20" VerticalAlignment="Top" Width="125"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="257,80,0,0" TextWrapping="Wrap" Text="Grades:" FontSize="20" VerticalAlignment="Top" Width="83"/>
+    </Grid>
+</Window>

@@ -8,13 +8,9 @@
         Background="DarkGray"
         Title="GPA Calculator" Height="450" Width="800">
     <Grid>
-        <Button Content="Calculate GPA" HorizontalAlignment="Left" Height="34" Margin="311,220,0,0" VerticalAlignment="Top" Width="176"/>
-        <TextBlock HorizontalAlignment="Left" Height="17" Margin="358,37,0,0" TextWrapping="Wrap" Text="Enter Your Name" VerticalAlignment="Top" Width="95" Name="NameBox"/>
-        <TextBox HorizontalAlignment="Left" Height="21" Margin="268,59,0,0" TextWrapping="Wrap" Text="Name Here" VerticalAlignment="Top" Width="280"/>
-        <TextBlock HorizontalAlignment="Left" Height="17" Margin="322,85,0,0" TextWrapping="Wrap" Text="Enter the Date - And Semester" VerticalAlignment="Top" Width="190" Name="DateBox"
-                   />
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="268,107,0,0" TextWrapping="Wrap" Text="Date/Semester" VerticalAlignment="Top" Width="280"/>
+        <Button Content="Calculate GPA" FontSize="20" HorizontalAlignment="Left" Height="64" Margin="266,62,0,0" VerticalAlignment="Top" Width="255" Click="Button_Click"/>
+
 
     </Grid>
-    
+
 </Window>
