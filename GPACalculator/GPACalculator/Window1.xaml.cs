@@ -37,7 +37,6 @@ namespace GPACalculator
 
             newStudent.SetName(name);
             newStudent.SetDate(date);
-            //this.CalcBox.Text = stud.GetName();
         }
 
         public void Generate_Classes(object sender, RoutedEventArgs e)
@@ -75,6 +74,7 @@ namespace GPACalculator
         {
             this.StackPack1.Children.Clear();
             this.StackPack2.Children.Clear();
+            this.CalcBox.Text = "";
         }
 
         public double Get_Grades(string txt)
@@ -128,10 +128,26 @@ namespace GPACalculator
 
             int j = 0;
 
-            foreach(var table in StackPack1.Children.OfType<TextBox>())
+            try
             {
-                hourArr[j] = Convert.ToDouble(table.Text);
-                j++;
+                foreach (var table in StackPack1.Children.OfType<TextBox>())
+                {
+                    double dummyValues;
+                    if (double.TryParse(table.Text, out dummyValues)){
+                        hourArr[j] = Convert.ToDouble(table.Text);
+                        j++;
+                    }
+                    else
+                    {
+                        throw new Exception();
+                    }
+
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Invalid Input -- try again");
+                this.CalcBox.Text = "";
             }
 
             int lengthOfArray = pointArr.Length;
